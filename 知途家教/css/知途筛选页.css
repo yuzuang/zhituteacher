@@ -1,0 +1,61 @@
+html,body,i,p,span,img,ul,li,h2 {
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font-size: 62.5%;
+	font-family: PingFangSC-Regular,PingFangSC-Light;
+}
+ul {
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.hot-list {
+	background-color: #f4f4f4;
+}
+.hot-teacher {
+	height: 6.5rem;
+	padding: 1.5rem;
+	margin-bottom: 0.5rem;
+	background-color: #fff;
+	position: relative;
+}
+.hot-teacher i img {
+	width: 6.5rem;
+	height: 6.5rem;
+	float: left;
+}
+.hot-right {
+	padding-left: 8rem;	
+}
+.hot-right p {
+	font-size: 1.4rem;
+	color: #878282;
+}
+.hot-right p span.teacher {
+	font-size: 1.8rem;
+	color: #000;
+}
+.hot-right .title .tip {
+	float: right;
+}
+.hot-right .type {
+	position: absolute;
+	bottom: 1.5rem;
+}
+.sub {
+	padding: 0 0.2rem;
+    margin: 0 0.5rem;
+    color: #fff;
+    background-color: #35c643;
+    border-radius: 0.2rem;
+}
+.lev {
+	padding: 0 0.3rem;
+	margin-right: 0.5rem;
+	color: #35c643;
+	border: 1px solid #35c643;
+	border-radius: 0.2rem;
+}

@@ -1,0 +1,146 @@
+ html,body,i,p,span,img,ul,li,h2 {
+	margin: 0;
+	padding: 0;
+ }
+ html,body{
+	font-size: 62.5%;
+	font-family: PingFangSC-Regular,PingFangSC-Light;
+ }
+ ul {
+	list-style: none;
+ }
+ h2 {
+	height: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    color: #f66710;
+    background-color: #f4f4f4;
+}
+.hot-list {
+	background-color: #f4f4f4;
+}
+.hot-teacher {
+	height: 6.5rem;
+	padding: 1.5rem;
+	margin-bottom: 0.5rem;
+	background-color: #fff;
+	position: relative;
+}
+.hot-teacher i img {
+	width: 6.5rem;
+	height: 6.5rem;
+	float: left;
+}
+.hot-right {
+	padding-left: 8rem;	
+}
+.hot-right p {
+	font-size: 1.4rem;
+	color: #878282;
+}
+.hot-right p span.teacher {
+	font-size: 1.8rem;
+	color: #000;
+}
+.hot-right .title .tip {
+	float: right;
+}
+.hot-right .type {
+	position: absolute;
+	bottom: 1.5rem;
+}
+.sub {
+	padding: 0 0.2rem;
+    margin: 0 0.5rem;
+    color: #fff;
+    background-color: #35c643;
+    border-radius: 0.2rem;
+}
+.lev {
+	padding: 0 0.3rem;
+	margin-right: 0.5rem;
+	color: #35c643;
+	border: 1px solid #35c643;
+	border-radius: 0.2rem;
+}
+.info-box {
+    background: #fff;
+    padding: 0.4rem 0 0.18667rem 0;
+    margin-bottom: 0.26667rem;
+}
+.assess-teacher-info {
+    padding: 0 1.4rem;
+}
+.assess-teacher-info .introduce {
+    background-image: url(../image/greenperson.png);
+    
+ }
+.assess-teacher-info .title {
+	font-size: 1.0rem;
+	background-repeat: no-repeat;
+    background-size: 1.4rem 1.4rem;
+    background-position: 0 0.05333rem;
+}
+.assess-teacher-info .content {
+    padding: 0.21333rem 0 0.21333rem 0.4rem;
+    font-size:0.9rem;
+    color: #888;
+}
+.assess-teacher-info .teacher-case-content {
+    border-bottom: 0.05rem solid #d8dded;
+}
+.assess-teacher-info .teach-title {
+    font-size: 0.9rem;
+    color: #2b2b2b;
+}
+.order-line {
+    width: 60%;
+    position: relative;
+    margin: 0.8rem auto 2.13333rem auto;
+      background: #f5f5f5;
+}
+.order-line .order-text {
+    color: #9e9c9c;
+    position: absolute;
+    top: -0.26667rem;
+    left: 1.6rem;
+    font-size: 1.0rem;
+    background: #f5f5f5;
+    padding: 0 0.21333rem;
+}
+.order-line hr {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #9e9c9c;
+}
+.order-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0;
+}
+.order-btn .collect {
+    width: 15%;
+    background: #49a775;
+    background-repeat: no-repeat;
+    background-size: 0.53333rem 0.53333rem;
+    background-position: 0.48rem 0.16rem;
+}
+.order-btn .collect span {
+    position: relative;
+   
+    font-size: 0.34667rem;
+}
+.order-btn .btn {
+    display: inline-block;
+    font-size:1.0rem;
+    color: #fff;
+    height: 3.33333rem;
+    line-height: 3.33333rem;
+    text-align: center;
+}
+.order-btn .order-now {
+    width: 85%;
+    background: #2dc072;
+}

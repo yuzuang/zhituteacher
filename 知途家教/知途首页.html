@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>知途家教</title>
+	<link rel="stylesheet" type="text/css" href="./css/知途首页.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+</head>
+<body>
+	<div id="familyTeacher">
+		<div class="header">
+			<div class="header-top">
+				<i><img src="./image/logo.png"></i>
+				<p class="login"><span class="login-i"><img src="./image/login.png"></span>我的</p>
+			</div>
+			<div class="banner-list">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div v-for="item in banner" class="swiper-slide"><img :src="item.image"></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="header-menu">
+			<div>
+				<ul>
+				<a :href="'知途筛选页.html?id='+item.id+'&subject='+item.name" v-for="item in subjects" style="color:black">
+					<li>
+						<span class="pic"><img :src="item.icon"></span>
+						<span class="subject">{{item.name}}</span>
+					</li>
+					</a>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<h2>热门教师</h2>
+		<div class="hot-list" >
+			<a :href="'知途详情页.html?id='+item.id" v-for="item in list">
+			<div class="hot-teacher">
+				<i><img :src="item.image"></i>
+				<div class="hot-right">
+					<p class="title"><span class="teacher">{{ item.name }}</span><span v-for="subItem in item.subject" class="sub">{{ subItem.label }}</span><span v-for="item in item.grade"  class="lev">{{item.label}}</span><span class="tip">授课{{item.teach_time}}小时</span></p>
+					<p>{{item.teach_year}}年教龄</p>
+					<p v-for="item in item.type" class="type">{{item.label}}</p>
+				</div>
+			</div>
+			</a>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/zt首页.js"></script>
+	<script type="text/javascript" src="./js/zt筛选页.js"></script>
+</body>
+</html>
